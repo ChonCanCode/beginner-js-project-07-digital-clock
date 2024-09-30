@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+
+body {
+    font-family: "Edu AU VIC WA NT Dots", cursive; 
+    overflow:hidden;
+    background: conic-gradient(from .5turn at bottom center, lightblue, white);
+}
+
+
+.container{ 
+    border: 1px solid black;
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.digitalClock{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    color: #979696;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.digitalClock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+@media(max-width: 768px) {
+    #bar1, #bar2 {
+        display: none;
+    }
+
+    .digitalClock{
+        text-align: center;
+        width: 100%
+    }
+
+    .digitalClock h1{
+        display:block;
+        font-size:2rem;
+    }
+
+    @media(max-width: 480px) {
+        .digitalClock h1{
+            font-size: 1rem;
+        }
+
+    }
+}
+
